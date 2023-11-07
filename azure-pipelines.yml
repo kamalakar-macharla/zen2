@@ -13,3 +13,8 @@ stages:
   - stage: Build
     jobs:
       - job: BuildTheApp
+        steps:
+          - bash: |
+            hostnmae
+            pwd
+            printenv
