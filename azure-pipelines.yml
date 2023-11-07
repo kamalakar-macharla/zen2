@@ -27,7 +27,9 @@ stages:
     jobs:
       - job: DeployToQa
   - stage: ProdEnv
-    jobs:
-      - job: DeployToProd
+    jobs: 
+      - deployment: prodDeployment
+        environment: Prod
+      
 
 
