@@ -15,4 +15,4 @@ stages:
       - job: BuildTheApp
         steps:
           - bash: |
-              hostnmae
+              hostname
