@@ -11,15 +11,10 @@ pool:
 
 stages:
   - stage: Build
-
-
-
-  
     jobs:
       - job: BuildTheApp
         steps:
           - bash: |
-              hostname
-              pwd
-              ls -lrt
-              whoami
+            pwd
+            ls -l
+            
