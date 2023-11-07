@@ -21,6 +21,7 @@ stages:
               java --version
               node --version
   - stage: DevEnv
+    dependsOn: Build
     jobs:
       - job: DeployToDev
   - stage: QaEnv
