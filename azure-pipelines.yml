@@ -15,6 +15,8 @@ stages:
       - job: BuildTheApp
         steps:
           - bash: |
-              pwd
               ls -l
-            
+              pwd
+              echo $PATH
+              
+
