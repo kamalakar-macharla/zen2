@@ -30,6 +30,10 @@ stages:
     jobs: 
       - deployment: prodDeployment
         environment: Prod
-      
+        strategy: 
+          runOnce: 
+            deploy: 
+              steps: 
+                - script: echo Deploying to QA environment...
 
 
