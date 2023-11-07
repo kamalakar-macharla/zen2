@@ -18,5 +18,7 @@ stages:
               ls -l
               pwd
               echo $PATH
+              java --version
+              node --version
               
 
