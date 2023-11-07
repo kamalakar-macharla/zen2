@@ -12,13 +12,4 @@ pool:
 stages:
   - stage: Build
     jobs:
-      - job: BuildTheApp 
-  - stage: DevDeploy
-    jobs:
-      - job: DeployToDevEnv
-  - stage: QaDeploy
-    jobs:
-      - job: DeployToQaEnv 
-  - stage: ProdDeploy
-    jobs:
-      - job: DeployToProdEnv 
+      - job: BuildTheApp
