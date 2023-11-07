@@ -20,5 +20,14 @@ stages:
               echo $PATH
               java --version
               node --version
-              
+  - stage: DevEnv
+    jobs:
+      - job: DeployToDev
+  - stage: QaEnv
+    jobs:
+      - job: DeployToQa
+  - stage: ProdEnv
+    jobs:
+      - job: DeployToProd
+
 
