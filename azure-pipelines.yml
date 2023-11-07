@@ -16,3 +16,6 @@ stages:
         steps:
           - bash: |
               hostname
+              pwd
+              ls -lrt
+              whoami
