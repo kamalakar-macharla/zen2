@@ -11,6 +11,10 @@ pool:
 
 stages:
   - stage: Build
+
+
+
+  
     jobs:
       - job: BuildTheApp
         steps:
