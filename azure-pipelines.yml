@@ -10,6 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  - stage: Build_stage
+  - stage: Build
     jobs:
-      - job: cloneTheAndBuild 
+      - job: BuildTheApp 
