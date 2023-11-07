@@ -25,6 +25,7 @@ stages:
     jobs:
       - job: DeployToDev
   - stage: QaEnv
+    dependsOn: Build
     jobs:
       - job: DeployToQa
   - stage: ProdEnv
