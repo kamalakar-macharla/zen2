@@ -3,9 +3,9 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>info.maigo.lab.hello</groupId>
-  <artifactId>nischel-apt</artifactId>
+  <artifactId>demo-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.0</version>
+  <version>1</version>
   <name>maigolab_hello</name>
   <url>http://maven.apache.org</url>
 
