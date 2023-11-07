@@ -15,6 +15,4 @@ stages:
       - job: BuildTheApp
         steps:
           - bash: |
-            hostnmae
-            pwd
-            printenv
+              hostnmae
