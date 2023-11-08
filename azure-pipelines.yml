@@ -23,6 +23,16 @@ stages:
              echo "---------------"
              ls -l
              ls -l target
+  - stage: DeployToDev
+    jobs:
+      - job: devDeploy
+  - stage: DeployToQa
+    jobs:
+      - job: qaDeploy
+  - stage: DeployToProd
+    jobs:
+      - job: prodDeploy
+      
 
 
 
