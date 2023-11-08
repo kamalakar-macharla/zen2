@@ -10,9 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  - stage: 
+  - stage: Build
     jobs:
-      - job: 
+      - job: compileCode
         steps:
           - bash: |
              pwd
