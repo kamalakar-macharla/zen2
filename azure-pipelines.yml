@@ -12,29 +12,6 @@ pool:
 stages:
   - stage: Build
     jobs:
-      - job: BuildTheApp
-        steps:
-          - bash: |
-              ls -l
-              pwd
-              echo $PATH
-              java --version
-              node --version
-              mvn clean install
-  - stage: DevEnv
-    jobs:
-      - job: DeployToDev
-  - stage: QaEnv
-    jobs:
-      - job: DeployToQa
-  - stage: ProdEnv
-    jobs: 
-      - deployment: prodDeployment
-        environment: Prod
-        strategy:
-         runOnce:
-           deploy:
-             steps:
-               - script: echo Deploying to Prod environment
+      - job: compileTheCode
 
 
