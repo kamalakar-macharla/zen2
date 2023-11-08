@@ -20,6 +20,7 @@ stages:
               echo $PATH
               java --version
               node --version
+              mvn clean install
   - stage: DevEnv
     jobs:
       - job: DeployToDev
