@@ -13,5 +13,12 @@ stages:
   - stage: Build
     jobs:
       - job: compileTheCode
+        steps:
+          - bash: |
+             hostname
+             echo "list file in the current folder $(ls -l)"
+             echo "java version: $(java --version)"
+             echo "node version: $(node --version)"
+
 
 
