@@ -19,6 +19,10 @@ stages:
              echo "list file in the current folder $(ls -l)"
              echo "java version: $(java --version)"
              echo "node version: $(node --version)"
+             mvn clean install
+             echo "---------------"
+             ls -l
+             ls -l /target
 
 
 
