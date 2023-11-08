@@ -31,7 +31,15 @@ stages:
       - job: qaDeploy
   - stage: DeployToProd
     jobs:
-      - job: prodDeploy
+      - deployment: prodDeploy
+        environment: Prod
+        strategy: 
+         runOnce:
+           deploy:
+             steps:
+               - bash: |
+                  echo "Deploying to Prod env"
+
       
 
 
