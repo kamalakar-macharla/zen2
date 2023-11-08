@@ -18,7 +18,15 @@ stages:
              pwd
              hostname
              echo "list the files in the current dir: $(ls -l)"
-             
+  - stage: DeployToDev
+    jobs:
+      - job: devDeploy
+  - stage: DeployToQa
+    jobs:
+      - job: qaDeploy
+  - stage: DeployToProd
+    jobs:
+      - job: prodDeploy
 
 
 
